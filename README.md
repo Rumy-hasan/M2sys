@@ -5,7 +5,7 @@ It's am assignment project. The target which we want to achieve from this projec
 - Try to implement it in MVVM pattern.
 
 # The design diagram:
-![image](https://whimsical.com/high-level-system-design-6ZbJd5Nu2euC4sKRNPM7xY)
+![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
 
 # Discussion and future improvement:
 As it's a dummy project. We do not make different framework or package for independent module. We can improve this part.
