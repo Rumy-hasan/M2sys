@@ -18,7 +18,7 @@ final class SearchViewModel: NSObject{
             filteredCities = allCity
         }
     }
-    private(set) var searchField: String = ""
+    var searchField: String = ""
     private let networkApi: CityDataFatcher
     private var sharedCache:Cache<String, Any>
     
@@ -42,6 +42,7 @@ final class SearchViewModel: NSObject{
     func searchForKey() {
         if let dataIsInLocal = self.checkDataAvailability(for: searchField) {
             self.currentCity = dataIsInLocal
+            self.err = nil
         }else{
             self.callNetwork()
         }
@@ -58,7 +59,9 @@ extension SearchViewModel{
                 self.sharedCache.insert(city, forKey: city.name)
                 self.cacheValidSearch(for: city.name)
                 self.currentCity = city
+                self.err = nil
             }else{
+                self.currentCity = nil
                 self.err = err
             }
         }

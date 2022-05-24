@@ -72,6 +72,11 @@ extension SearchVC:UITableViewDelegate, UITableViewDataSource{
         cell.textLabel?.text = self.filteredCities[indexPath.item]
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.searchViewModel.searchField = self.filteredCities[indexPath.row]
+        self.searchBtnClick(self.searchBtn!)
+    }
 }
 
 

@@ -49,7 +49,7 @@ extension DetailViewController{
     
     private func bindErrorWithLBL() {
         self.searchViewModel.$err.receive(on: DispatchQueue.main).sink { [weak self] err in
-            guard let self = self else{return}
+            guard let self = self, let _ = err else{return}
             self.detailText.backgroundColor = UIColor.red
             self.detailText.text = err?.localizedDescription
         }.store(in: &subscriptions)
