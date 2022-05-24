@@ -9,13 +9,23 @@
 /* Begin PBXBuildFile section */
 		C159CD38283C06CF005FC8A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C159CD37283C06CF005FC8A3 /* AppDelegate.swift */; };
 		C159CD3A283C06CF005FC8A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C159CD39283C06CF005FC8A3 /* SceneDelegate.swift */; };
-		C159CD3C283C06CF005FC8A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C159CD3B283C06CF005FC8A3 /* ViewController.swift */; };
+		C159CD3C283C06CF005FC8A3 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C159CD3B283C06CF005FC8A3 /* SearchVC.swift */; };
 		C159CD3F283C06CF005FC8A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C159CD3D283C06CF005FC8A3 /* Main.storyboard */; };
 		C159CD41283C06D0005FC8A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C159CD40283C06D0005FC8A3 /* Assets.xcassets */; };
 		C159CD44283C06D0005FC8A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C159CD42283C06D0005FC8A3 /* LaunchScreen.storyboard */; };
 		C159CD4F283C06D0005FC8A3 /* M2sysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C159CD4E283C06D0005FC8A3 /* M2sysTests.swift */; };
 		C159CD59283C06D0005FC8A3 /* M2sysUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C159CD58283C06D0005FC8A3 /* M2sysUITests.swift */; };
 		C159CD5B283C06D0005FC8A3 /* M2sysUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C159CD5A283C06D0005FC8A3 /* M2sysUITestsLaunchTests.swift */; };
+		C159CD6E283C0754005FC8A3 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = C159CD6D283C0754005FC8A3 /* City.swift */; };
+		C159CD71283C079E005FC8A3 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C159CD70283C079E005FC8A3 /* Extension.swift */; };
+		C159CD73283C07EB005FC8A3 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C159CD72283C07EB005FC8A3 /* DependencyContainer.swift */; };
+		C159CD75283C08C0005FC8A3 /* CustomCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = C159CD74283C08C0005FC8A3 /* CustomCache.swift */; };
+		C159CD79283C09D0005FC8A3 /* CityDataFatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C159CD76283C09D0005FC8A3 /* CityDataFatcher.swift */; };
+		C159CD7A283C09D0005FC8A3 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C159CD77283C09D0005FC8A3 /* CustomError.swift */; };
+		C159CD7B283C09D0005FC8A3 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C159CD78283C09D0005FC8A3 /* API.swift */; };
+		C159CD7D283C0A83005FC8A3 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C159CD7C283C0A83005FC8A3 /* SearchViewModel.swift */; };
+		C159CD80283C0D1E005FC8A3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C159CD7F283C0D1E005FC8A3 /* DetailViewController.swift */; };
+		C159CD82283CDF01005FC8A3 /* CacheUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C159CD81283CDF01005FC8A3 /* CacheUtility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +49,7 @@
 		C159CD34283C06CF005FC8A3 /* M2sys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = M2sys.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C159CD37283C06CF005FC8A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C159CD39283C06CF005FC8A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C159CD3B283C06CF005FC8A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C159CD3B283C06CF005FC8A3 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		C159CD3E283C06CF005FC8A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C159CD40283C06D0005FC8A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C159CD43283C06D0005FC8A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +59,16 @@
 		C159CD54283C06D0005FC8A3 /* M2sysUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = M2sysUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C159CD58283C06D0005FC8A3 /* M2sysUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M2sysUITests.swift; sourceTree = "<group>"; };
 		C159CD5A283C06D0005FC8A3 /* M2sysUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M2sysUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C159CD6D283C0754005FC8A3 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		C159CD70283C079E005FC8A3 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		C159CD72283C07EB005FC8A3 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		C159CD74283C08C0005FC8A3 /* CustomCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCache.swift; sourceTree = "<group>"; };
+		C159CD76283C09D0005FC8A3 /* CityDataFatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityDataFatcher.swift; sourceTree = "<group>"; };
+		C159CD77283C09D0005FC8A3 /* CustomError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		C159CD78283C09D0005FC8A3 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		C159CD7C283C0A83005FC8A3 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		C159CD7F283C0D1E005FC8A3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C159CD81283CDF01005FC8A3 /* CacheUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheUtility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +119,12 @@
 		C159CD36283C06CF005FC8A3 /* M2sys */ = {
 			isa = PBXGroup;
 			children = (
+				C159CD7E283C0CF5005FC8A3 /* VCS&Views */,
+				C159CD6C283C0732005FC8A3 /* Model */,
+				C159CD6B283C0721005FC8A3 /* ViewModel */,
+				C159CD67283C06DC005FC8A3 /* Services */,
 				C159CD37283C06CF005FC8A3 /* AppDelegate.swift */,
 				C159CD39283C06CF005FC8A3 /* SceneDelegate.swift */,
-				C159CD3B283C06CF005FC8A3 /* ViewController.swift */,
 				C159CD3D283C06CF005FC8A3 /* Main.storyboard */,
 				C159CD40283C06D0005FC8A3 /* Assets.xcassets */,
 				C159CD42283C06D0005FC8A3 /* LaunchScreen.storyboard */,
@@ -125,6 +148,70 @@
 				C159CD5A283C06D0005FC8A3 /* M2sysUITestsLaunchTests.swift */,
 			);
 			path = M2sysUITests;
+			sourceTree = "<group>";
+		};
+		C159CD67283C06DC005FC8A3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C159CD6F283C078F005FC8A3 /* Utility */,
+				C159CD6A283C0709005FC8A3 /* NetworkAPI */,
+				C159CD69283C06FC005FC8A3 /* PersistentApi */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C159CD69283C06FC005FC8A3 /* PersistentApi */ = {
+			isa = PBXGroup;
+			children = (
+				C159CD74283C08C0005FC8A3 /* CustomCache.swift */,
+				C159CD81283CDF01005FC8A3 /* CacheUtility.swift */,
+			);
+			path = PersistentApi;
+			sourceTree = "<group>";
+		};
+		C159CD6A283C0709005FC8A3 /* NetworkAPI */ = {
+			isa = PBXGroup;
+			children = (
+				C159CD78283C09D0005FC8A3 /* API.swift */,
+				C159CD76283C09D0005FC8A3 /* CityDataFatcher.swift */,
+				C159CD77283C09D0005FC8A3 /* CustomError.swift */,
+			);
+			path = NetworkAPI;
+			sourceTree = "<group>";
+		};
+		C159CD6B283C0721005FC8A3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C159CD7C283C0A83005FC8A3 /* SearchViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C159CD6C283C0732005FC8A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C159CD6D283C0754005FC8A3 /* City.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C159CD6F283C078F005FC8A3 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				C159CD70283C079E005FC8A3 /* Extension.swift */,
+				C159CD72283C07EB005FC8A3 /* DependencyContainer.swift */,
+			);
+			name = Utility;
+			path = ../Utility;
+			sourceTree = "<group>";
+		};
+		C159CD7E283C0CF5005FC8A3 /* VCS&Views */ = {
+			isa = PBXGroup;
+			children = (
+				C159CD3B283C06CF005FC8A3 /* SearchVC.swift */,
+				C159CD7F283C0D1E005FC8A3 /* DetailViewController.swift */,
+			);
+			path = "VCS&Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +345,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C159CD3C283C06CF005FC8A3 /* ViewController.swift in Sources */,
+				C159CD7D283C0A83005FC8A3 /* SearchViewModel.swift in Sources */,
+				C159CD79283C09D0005FC8A3 /* CityDataFatcher.swift in Sources */,
+				C159CD75283C08C0005FC8A3 /* CustomCache.swift in Sources */,
+				C159CD80283C0D1E005FC8A3 /* DetailViewController.swift in Sources */,
+				C159CD71283C079E005FC8A3 /* Extension.swift in Sources */,
+				C159CD3C283C06CF005FC8A3 /* SearchVC.swift in Sources */,
+				C159CD7B283C09D0005FC8A3 /* API.swift in Sources */,
 				C159CD38283C06CF005FC8A3 /* AppDelegate.swift in Sources */,
+				C159CD7A283C09D0005FC8A3 /* CustomError.swift in Sources */,
+				C159CD6E283C0754005FC8A3 /* City.swift in Sources */,
+				C159CD82283CDF01005FC8A3 /* CacheUtility.swift in Sources */,
+				C159CD73283C07EB005FC8A3 /* DependencyContainer.swift in Sources */,
 				C159CD3A283C06CF005FC8A3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
